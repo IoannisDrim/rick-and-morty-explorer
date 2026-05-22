@@ -1,0 +1,91 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  color: var(--color-muted);
+  line-height: 1.75;
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+}
+
+.list {
+  color: var(--color-muted);
+  line-height: 1.8;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.list li {
+  margin-bottom: 6px;
+}
+
+.stack {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.stackItem {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stackLabel {
+  font-weight: 600;
+  color: var(--color-main);
+  font-size: 0.875rem;
+}
+
+.stackDesc {
+  color: var(--color-muted);
+  font-size: 0.775rem;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.link:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  text-decoration: none;
+}
