@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  width: 72px;
+  height: 72px;
+}
+
+/* Outer ring — full speed, portal green */
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: var(--color-primary);
+  border-right-color: rgba(151, 206, 76, 0.35);
+  box-shadow: 0 0 18px rgba(151, 206, 76, 0.25);
+  animation: spin 0.9s linear infinite;
+}
+
+/* Inner ring — slower reverse, sci-fi blue accent */
+.ringInner {
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-bottom-color: rgba(68, 180, 227, 0.6);
+  border-left-color: rgba(68, 180, 227, 0.25);
+  animation: spinReverse 1.5s linear infinite;
+}
+
+/* Central glow dot */
+.core {
+  position: absolute;
+  inset: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(151, 206, 76, 0.5) 0%, transparent 70%);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
