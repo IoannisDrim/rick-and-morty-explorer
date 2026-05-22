@@ -1,5 +1,7 @@
 # Rick and Morty Explorer
 
+**Live demo:** https://rick-and-morty-explorer-ruby.vercel.app/
+
 A portfolio demo built with React 19, TypeScript, and Apollo Client. Browse and search over 800 characters from the [Rick and Morty GraphQL API](https://rickandmortyapi.com/graphql) with infinite scroll, URL-persistent search, and full error handling.
 
 ## Highlights
