@@ -1,0 +1,103 @@
+:root {
+  /* Surface */
+  --color-bg: #0f1117;
+  --color-surface: #1a2235;
+  --color-surface-hover: #243050;
+  --color-border: #2d3f5e;
+
+  /* Text */
+  --color-main: #eef1f8;
+  --color-muted: #8a9bbf;
+
+  /* Brand */
+  --color-primary: #97ce4c;
+  --color-primary-hover: #80b838;
+  --link-color: #44b4e3;
+
+  /* Legacy aliases kept for existing component CSS */
+  --color-white: #fff;
+  --color-black: #000;
+
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: var(--color-main);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #69caed;
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: rgba(151, 206, 76, 0.12);
+  color: var(--color-primary);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.875em;
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0;
+  }
+}
+
+[data-virtuoso-scroller] {
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) var(--color-surface);
+}
+
+[data-virtuoso-scroller]::-webkit-scrollbar {
+  width: 6px;
+}
+
+[data-virtuoso-scroller]::-webkit-scrollbar-track {
+  background: var(--color-surface);
+  border-radius: 3px;
+}
+
+[data-virtuoso-scroller]::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+
+[data-virtuoso-scroller]::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
